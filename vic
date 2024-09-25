@@ -1,0 +1,141 @@
+repeat task.wait() until game:IsLoaded() and game:service'Players'.LocalPlayer.Character
+local cumshotWordlist = {'fly','hack','cheat','flie','noob','exploit','magic','wiz', 'rec','rep','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','r','s','t','u','v','y','z','w','x'}
+
+local uhm = function(sex)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hoddog231/serverhop123/refs/heads/main/waza"))()
+local tween = game:GetService('TweenService')
+local remoteOnlyAutisticPeopleUseAkaMe = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("ClaimHive")
+
+game:GetService('Players').PlayerChatted:Connect(function(useless_shit,plr_unneded,msg)
+   msg = msg:lower()
+   for i,v in next, cumshotWordlist do
+      if string.find(msg,v) then
+         uhm(game.PlaceId)
+      end
+   end
+end)
+
+local function doesViciousExistOrItWasAllABadDream()
+   warn('vic exist trig')
+   local monsta = workspace.Monsters
+   for i,v in next, monsta:GetChildren() do
+      if (v.Name:sub(1,16) == 'Vicious Bee (Lvl' or v.Name:sub(1,23) == 'Gifted Vicious Bee (Lvl') and v:IsA('Model') and v:FindFirstChild('HumanoidRootPart') then
+         warn('vic exists: triggered xvideos.com/gay/search?q=femboy')
+         return v:FindFirstChild('HumanoidRootPart')
+      end
+   end
+   warn('vic exist pass')
+   uhm(game.PlaceId)
+   return false
+end
+
+local function fuckYourCharacterUp(root)
+   while task.wait() do
+      root.Velocity = Vector3.zero
+   end
+end
+
+local function calctime(targetpos)
+    warn('calc trig')
+        if not game:service'Players'.LocalPlayer.Character then return 'I fucking hate Canadians' end
+        if typeof(targetpos) ~= 'Vector3' then return 'no uwu' end
+    warn('calc pass')
+    local tme = (game:GetService('Players').LocalPlayer.Character.Humanoid.RootPart.Position - targetpos).Magnitude / 46
+    return tme
+end
+
+local function tp(x)
+    local gaySex = false
+    if x and (typeof(x) == 'Vector3') and game:service'Players'.LocalPlayer.Character then
+       local calculated = calctime(x)
+       if not calculated or calculated == 'I fucking hate Canadians' or calculated == 'no uwu' then return 'do not' end
+       warn('tp passed')
+       tween:Create(game:service'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').RootPart,TweenInfo.new(calculated,Enum.EasingStyle.Linear),{CFrame = CFrame.new(x)}):Play()
+       task.spawn(function()
+           task.wait(calculated)
+           gaySex = true
+       end)
+       repeat task.wait() until gaySex
+       warn('tp made')
+       return true
+    end
+end
+
+local hornycombs = {}
+
+local function claimHoneycombWhereFemboysFuck()
+   for i,v in next, workspace.HivePlatforms:GetChildren() do
+      if v:FindFirstChild('PlayerRef') and (v.PlayerRef.Value == nil) then
+         table.insert(hornycombs,v.Circle)
+      end
+   end
+   local hornycomb
+   if #hornycombs < 2 then
+      hornycomb = hornycombs[1]
+   else
+      hornycomb = hornycombs[math.random(1,#hornycombs)]
+   end
+   local hum = game:GetService('Players').LocalPlayer.Character:WaitForChild('Humanoid')
+   local walkcon, creampied = nil, false
+   walkcon = hum.MoveToFinished:Connect(function()
+       creampied = true
+   end)
+   hum:MoveTo(hornycomb.Position)
+   repeat task.wait() until creampied
+   repeat task.wait(0.5)
+   game:GetService('VirtualInputManager'):SendKeyEvent(true, 'E', false, game)
+   task.wait(0.5)
+   game:GetService('VirtualInputManager'):SendKeyEvent(false, 'E', false, game)
+   until hornycomb.Parent.PlayerRef.Value ~= nil
+end
+
+local uwu = workspace.Particles:FindFirstChild('Vicious')
+warn('load')
+if uwu then
+   uwu = uwu:FindFirstChild('Thorn')
+   claimHoneycombWhereFemboysFuck()
+   local char = game:service'Players'.LocalPlayer.Character or game:service'Players'.LocalPlayer.CharacterAdded:Wait()
+   local root = char:WaitForChild('Humanoid').RootPart
+   task.spawn(fuckYourCharacterUp,root)
+   local attempt
+   local suc, er = pcall(function()
+       attempt = tp(uwu.Position + Vector3.new(0,2,0))
+   end)
+   if not suc or attempt == nil or attempt == 'do not' then
+      warn('couldnt tp',attempt)
+      return uhm(game.PlaceId)
+   end
+   task.wait(2)
+   warn('tping')
+   local plushiousBeeUwU = doesViciousExistOrItWasAllABadDream()
+   if plushiousBeeUwU then
+      local partWhereISuckDicks = Instance.new('Part',workspace)
+      partWhereISuckDicks.Anchored = true
+      local con
+      repeat task.wait()
+      until not doesViciousExistOrItWasAllABadDream()
+      uhm(game.PlaceId)
+   end
+else
+   local plushiousBeeUwU = doesViciousExistOrItWasAllABadDream()
+   warn('passed2')
+   if plushiousBeeUwU then
+      claimHoneycombWhereFemboysFuck()
+      warn'im doing all this shit2'
+      local char = game:service'Players'.LocalPlayer.Character or game:service'Players'.LocalPlayer.CharacterAdded:Wait()
+      local root = char:WaitForChild('Humanoid').RootPart
+      task.spawn(fuckYourCharacterUp,root)
+      tp(plushiousBeeUwU.Position)
+      warn('tped2')
+      task.wait(1)
+      local partWhereISuckDicks = Instance.new('Part',workspace)
+      partWhereISuckDicks.Anchored = true
+      local con
+      warn('starting')
+      repeat task.wait()
+      until not doesViciousExistOrItWasAllABadDream()
+      uhm(game.PlaceId)
+   else
+      uhm(game.PlaceId)
+   end
+end
